@@ -128,3 +128,7 @@ Cada janela irá ter o modo noturno, tanto para estética, quando para visualiza
 
 ---
 ---
+
+# Comentario do Desenvolvedor
+
+Como citei sou iniciante e tudo isso é para eu aprender, então não espere muito sobre o projeto, tentarei meu maximo sobre ele, mas me perdoe caso algo no projeto seja alterado.
