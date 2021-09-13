@@ -7,10 +7,15 @@ Onde ajuda a lembrar de coisas, desligar automáticamente e a manusear seu compu
 ## O que terá dentro ?
 
 - [Timer](#timer)
-- [Monitor Performance](#monitor)
+
+- [Monitor Performance](#pc)
+
 - [Notas](#notas)
-- [Player de Música](#musicas)
+
+- [Player de Música](#songs)
+
 - [Organiza a área de trabalho](#atalhos)
+
 - [Modo Noturno](#night)
 ---
 ## Porque o Projeto?
@@ -24,12 +29,13 @@ E também o aplicativo vai me auxiliar a executar as minhas coisas, e cuida do m
 ---
 
 <a name="timer"></a>
+
 ## Timer
-- [Desligamento Automático](#desAuto)
+- [Desligamento Automático](#desliga)
 - [Alarmes](#alarmes)
   - [Conexões](#conect)
 
-<a name="desAuto"></a>
+<a name="desliga"></a>
 
 ### **Desligamento Automático**
 
@@ -65,3 +71,60 @@ Os alarmes normais não tem nada de especial só tem contido 3 niveis de urgênc
 
 #### **Conexões**
 
+Mas além destes alarmes, existeram os alarmes que executam coisas, exemplo : chega o horário programado, é aberto uma nota fazendo o que tem que ser executado e tudo detalhado.
+
+As conexões que teram será dentro do proprio aplicativo, onde que pode se abrir o Player de Musica ou as Notas, ou ate os dois ao mesmo tempo.
+
+Com um horário definido e os 2 marcados podemos nos lembrar de executar projetos com certo conforto com sua musica tocando. E existe mais uma conexão mas ela esta integrada no proximo tópico.
+
+---
+<a name="pc"></a>
+
+## Monitor Performance
+
+Um monitor onde mostrará a desempenho do computador, quantos dados de CPU sendo usadas, Ram usadas e HD usados.
+E além disso ele limpará a memoria cache automáticamente, quando iniciar o programa, ou o computador caso deixe inicializar junto com o sistema.
+
+Ele deletará os arquivos dentro das pastas recent, temp, %temp% e prefetch
+
+**Como estou aprendendo irei fazer testes antes disso realmente ser aplicado, caso de errado irei retirar esta opção**
+
+---
+
+<a name="notas"></a>
+
+## Notas
+
+Será um bloco de notas normal, com algumas formatações de texto, e a conexão citada no timer
+
+**(Caso ideias novas irei adicionar)**
+
+---
+
+<a name="songs"></a>
+
+## Player de Músicas
+
+Será um player de musica que terá acesso a musica do computador, e conectado a pesquisa ou links de música no youtube.
+
+**(Lembrando, as coisas citadas em todos os tópicos NÃO SÃO OFICIAIS, então tudo citado são planos e tentarei colocar)**
+
+---
+
+<a name="atalhos"></a>
+
+## Organiza a área de trabalho
+
+Será uma aba onde terá os atalhos que normalmente ficam na área de trabalho, deixando-a suja.
+Organizando fica mais limpo e pratico, o que é recomendavel por em pastas os apps e por as pastas como atalhos no programa pois assim poderá ter mais acesso, mais rapido e organizado.
+
+---
+
+<a name="night"></a>
+
+## Modo Noturno
+
+Cada janela irá ter o modo noturno, tanto para estética, quando para visualizar melhor, dependendo do gosto, fiz os dois modos, pensando em estéticas de setups diferentes.
+
+---
+---
