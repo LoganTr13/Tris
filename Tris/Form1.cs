@@ -40,9 +40,9 @@ namespace Tris
             btnCima.BackColor = Color.FromArgb(27, 26, 42);
             btnBaixo.BackColor = Color.FromArgb(27, 26, 42);
 
-            this.cpbCPU.ForeColor = Color.FromArgb(220, 185, 250);
-            this.cpbRAM.ForeColor = Color.FromArgb(220, 185, 250);
-            this.cpbDISK.ForeColor = Color.FromArgb(220, 185, 250);
+            this.cpbCPU.ForeColor = Color.FromArgb(90, 238, 250);
+            this.cpbRAM.ForeColor = Color.FromArgb(90, 238, 250);
+            this.cpbDISK.ForeColor = Color.FromArgb(90, 238, 250);
 
             this.cpbCPU.OuterColor = Color.FromArgb(65, 65, 123);
             this.cpbRAM.OuterColor = Color.FromArgb(65, 65, 123);
@@ -81,5 +81,19 @@ namespace Tris
             lblRAM.ForeColor = Color.FromArgb(220, 200, 255);
             lblDisk.ForeColor = Color.FromArgb(220, 200, 255);
         }
+
+        private void ForSecond_Performance_Tick(object sender, EventArgs e)
+        {
+            cpbCPU.Value = (int)pCPU.NextValue();
+            cpbCPU.Text = cpbCPU.Value.ToString() + " %";
+
+            cpbRAM.Value = (int)pRAM.NextValue();
+            cpbRAM.Text = cpbRAM.Value.ToString() + " %";
+
+            cpbDISK.Value = (int)pDisk.NextValue();
+            cpbDISK.Text = cpbDISK.Value.ToString() + " GB";
+        }
+
+       
     }
 }

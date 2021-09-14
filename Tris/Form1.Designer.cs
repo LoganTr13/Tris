@@ -48,11 +48,13 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.pboxModeDark = new System.Windows.Forms.PictureBox();
             this.pnFunctions = new System.Windows.Forms.Panel();
+            this.pDisk = new System.Diagnostics.PerformanceCounter();
             this.pnApps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxModeDark)).BeginInit();
             this.pnFunctions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pDisk)).BeginInit();
             this.SuspendLayout();
             // 
             // cpbCPU
@@ -60,39 +62,41 @@
             this.cpbCPU.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.cpbCPU.AnimationSpeed = 500;
             this.cpbCPU.BackColor = System.Drawing.Color.Transparent;
-            this.cpbCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
-            this.cpbCPU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cpbCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.cpbCPU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(185)))), ((int)(((byte)(250)))));
             this.cpbCPU.InnerColor = System.Drawing.Color.Transparent;
             this.cpbCPU.InnerMargin = 2;
             this.cpbCPU.InnerWidth = -1;
             this.cpbCPU.Location = new System.Drawing.Point(43, 54);
-            this.cpbCPU.MarqueeAnimationSpeed = 2000;
+            this.cpbCPU.MarqueeAnimationSpeed = 1000;
             this.cpbCPU.Name = "cpbCPU";
             this.cpbCPU.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
             this.cpbCPU.OuterMargin = -25;
             this.cpbCPU.OuterWidth = 26;
             this.cpbCPU.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.cpbCPU.ProgressWidth = 25;
-            this.cpbCPU.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.cpbCPU.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 65F);
             this.cpbCPU.Size = new System.Drawing.Size(138, 138);
             this.cpbCPU.StartAngle = 270;
+            this.cpbCPU.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.cpbCPU.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbCPU.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.cpbCPU.SubscriptText = ".23";
+            this.cpbCPU.SubscriptText = "";
             this.cpbCPU.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbCPU.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.cpbCPU.SuperscriptText = "°C";
+            this.cpbCPU.SuperscriptText = "";
             this.cpbCPU.TabIndex = 0;
-            this.cpbCPU.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.cpbCPU.Value = 68;
+            this.cpbCPU.Text = "00 %";
+            this.cpbCPU.TextMargin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.cpbCPU.Value = 50;
             // 
             // cpbRAM
             // 
             this.cpbRAM.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.cpbRAM.AnimationSpeed = 500;
             this.cpbRAM.BackColor = System.Drawing.Color.Transparent;
-            this.cpbRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
-            this.cpbRAM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cpbRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.cpbRAM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(185)))), ((int)(((byte)(250)))));
             this.cpbRAM.InnerColor = System.Drawing.Color.Transparent;
             this.cpbRAM.InnerMargin = 2;
             this.cpbRAM.InnerWidth = -1;
@@ -104,17 +108,19 @@
             this.cpbRAM.OuterWidth = 26;
             this.cpbRAM.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.cpbRAM.ProgressWidth = 25;
-            this.cpbRAM.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.cpbRAM.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 65F);
             this.cpbRAM.Size = new System.Drawing.Size(138, 138);
             this.cpbRAM.StartAngle = 270;
+            this.cpbRAM.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.cpbRAM.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbRAM.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.cpbRAM.SubscriptText = ".23";
+            this.cpbRAM.SubscriptText = "";
             this.cpbRAM.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbRAM.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.cpbRAM.SuperscriptText = "°C";
+            this.cpbRAM.SuperscriptText = "";
             this.cpbRAM.TabIndex = 1;
-            this.cpbRAM.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.cpbRAM.Text = "00 %";
+            this.cpbRAM.TextMargin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.cpbRAM.Value = 68;
             // 
             // cpbDISK
@@ -122,8 +128,8 @@
             this.cpbDISK.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.cpbDISK.AnimationSpeed = 500;
             this.cpbDISK.BackColor = System.Drawing.Color.Transparent;
-            this.cpbDISK.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
-            this.cpbDISK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cpbDISK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.cpbDISK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(185)))), ((int)(((byte)(250)))));
             this.cpbDISK.InnerColor = System.Drawing.Color.Transparent;
             this.cpbDISK.InnerMargin = 2;
             this.cpbDISK.InnerWidth = -1;
@@ -135,17 +141,19 @@
             this.cpbDISK.OuterWidth = 26;
             this.cpbDISK.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.cpbDISK.ProgressWidth = 25;
-            this.cpbDISK.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.cpbDISK.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 45F);
             this.cpbDISK.Size = new System.Drawing.Size(138, 138);
             this.cpbDISK.StartAngle = 270;
+            this.cpbDISK.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.cpbDISK.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbDISK.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.cpbDISK.SubscriptText = ".23";
+            this.cpbDISK.SubscriptText = "";
             this.cpbDISK.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.cpbDISK.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.cpbDISK.SuperscriptText = "°C";
+            this.cpbDISK.SuperscriptText = "";
             this.cpbDISK.TabIndex = 2;
-            this.cpbDISK.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.cpbDISK.Text = "00 GB";
+            this.cpbDISK.TextMargin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.cpbDISK.Value = 68;
             // 
             // pnApps
@@ -270,11 +278,12 @@
             // 
             this.pRAM.CategoryName = "Memory";
             this.pRAM.CounterName = "% Committed Bytes In Use";
-            this.pRAM.InstanceName = "_Total";
             // 
             // ForSecond_Performance
             // 
+            this.ForSecond_Performance.Enabled = true;
             this.ForSecond_Performance.Interval = 1000;
+            this.ForSecond_Performance.Tick += new System.EventHandler(this.ForSecond_Performance_Tick);
             // 
             // btnClose
             // 
@@ -304,12 +313,19 @@
             // pnFunctions
             // 
             this.pnFunctions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(220)))), ((int)(((byte)(245)))));
+            this.pnFunctions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnFunctions.Controls.Add(this.pboxModeDark);
             this.pnFunctions.Controls.Add(this.btnClose);
             this.pnFunctions.Location = new System.Drawing.Point(-2, 0);
             this.pnFunctions.Name = "pnFunctions";
             this.pnFunctions.Size = new System.Drawing.Size(589, 22);
             this.pnFunctions.TabIndex = 12;
+            // 
+            // pDisk
+            // 
+            this.pDisk.CategoryName = "LogicalDisk";
+            this.pDisk.CounterName = "% Free Space";
+            this.pDisk.InstanceName = "_Total";
             // 
             // Tris
             // 
@@ -346,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxModeDark)).EndInit();
             this.pnFunctions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pDisk)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,6 +388,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pboxModeDark;
         private System.Windows.Forms.Panel pnFunctions;
+        private System.Diagnostics.PerformanceCounter pDisk;
     }
 }
 

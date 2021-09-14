@@ -121,19 +121,19 @@
     <value>True</value>
   </metadata>
   <metadata name="pCPU.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>10, 15</value>
   </metadata>
   <metadata name="pRAM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>83, 15</value>
   </metadata>
   <metadata name="ForSecond_Performance.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>165, 15</value>
+    <value>244, 15</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pboxModeDark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAEJSURBVFhHzY9BDsMgDAT7vb6j
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAEJSURBVFhHzY9BDsMgDAT7vb6j
         3+upv+qxL6DyYZExa0wwSnIYCW/AO3mUUi6FhmdCQ8b78yyCzbPQUIPiSwRQ+v29pspXBGko6PJZgRVo
         yMq1wE6ZLrDl0d9nZbrAlkcCWZpBinYIYI/NGc3Aym8rcFTKox5gPSuwi3rwyoWRQFauHlYFIqK39RAJ
         ZCQA29F8ZOVghwCjHm4hMJLAd9xneHdG75pBLrJygAJv4eibRzPIY1ZsWSnyaAYsZqWWXRJdMCsgQCIj
@@ -141,8 +141,8 @@
         JjQ8j/L4A9li9gIRvMUaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="pnFunctions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="pDisk.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>165, 15</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>44</value>
