@@ -94,6 +94,5 @@ namespace Tris
             cpbDISK.Text = cpbDISK.Value.ToString() + " GB";
         }
 
-       
     }
 }
